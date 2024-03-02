@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Um Serviço Interessante</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style type='text/css'>
+        body {
+            background-image: url('Bugatti Chiron.gif');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .paragrafo-texto {
+            color: #ffffff;
+            font-size: 20px;
+            text-align: justify;
+            line-height: 155%;
+        }
+
+        .elemento {
+            font-size: 22px;
+            width: 18%;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 20vh;
+        }
+
+        .alinhar {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: white;">Um Ótimo Sistema</h1>
+    <h3 style="text-align: center;color: white;">Sem sombra de dúvida</h3>
+    <hr>
+    <h4 style="text-align: center;"><a href="https://www.bugatti.com/" style="color: #e5e5e5">This is what we sell</a>
+    </h4>
+    <p></p>
+    <hr>
+    <h4 class="alinhar"><a class="elemento"
+            href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/"
+            style="color: #c20606">Chiron</a>
+        <a class="elemento" href="https://www.bugatti.com/the-bugatti-models/coachbuilding/centodieci/"
+            style="color: #ffffff">Cientodieci</a>
+        <a class="elemento" href=https://www.bugatti.com/the-bugatti-models/coachbuilding/divo/
+            style="color: #0078da">Divo</a>
+        <a class="elemento" href=https://www.bugatti.com/the-bugatti-models/w16-mistral-the-ultimate-roadster/
+            style="color: #8d8b8b">W16 Mistral</a>
+        <a class="elemento" href=https://www.bugatti.com/the-bugatti-models/track-only/bolide/
+            style="color: #00d0ff">Bolide</a>
+    </h4>
+    <p></p>
+    <p></p>
+    <hr>
+    <h2 style="color: white; font-size: 35px;"><strong>History</strong></h2>
+    <hr>
+    <p></p>
+    <p></p>
+    <p class="paragrafo-texto" style="margin: 65px;">A Bugatti é uma marca icônica de carros de luxo e alta performance
+        com uma história rica
+        e distinta. Fundada em 1909 pelo engenheiro Ettore Bugatti, a empresa inicialmente se destacou por seus
+        elegantes e poderosos carros de corrida. Ao longo dos anos, a Bugatti tornou-se sinônimo de exclusividade,
+        artesanato meticuloso e desempenho incomparável. Seu legado é marcado por modelos lendários como o Bugatti Type
+        35, um dos carros de corrida mais bem-sucedidos da história, e o revolucionário Bugatti Veyron, que estabeleceu
+        novos padrões de velocidade e engenharia automotiva.</p>
+    <p class="paragrafo-texto" style="margin: 65px;">Sob a propriedade do Grupo Volkswagen desde 1998, a Bugatti
+        continua a projetar e
+        fabricar alguns dos carros mais desejados e exclusivos do mundo. Seus modelos mais recentes, como o Bugatti
+        Chiron e o Bugatti Divo, representam o auge do luxo, desempenho e inovação tecnológica. Com preços astronômicos
+        e produção extremamente limitada, os carros Bugatti são reservados para uma elite privilegiada de entusiastas
+        automotivos e colecionadores apaixonados, consolidando ainda mais a posição da marca como um símbolo de status e
+        excelência no mundo automotivo de luxo.</p>
+    <p class="paragrafo-texto" style="margin: 65px;">Além de sua linha de produção de carros de alto desempenho, a
+        Bugatti também se destaca
+        pela sua abordagem exclusiva de personalização e serviços de concierge. Os clientes da Bugatti têm a
+        oportunidade de customizar seus veículos de acordo com suas preferências individuais, desde a seleção de cores e
+        materiais até a incorporação de detalhes exclusivos e únicos. Essa atenção aos detalhes e compromisso com a
+        excelência artesanal contribuem para a aura de exclusividade e prestígio que envolve a marca Bugatti, tornando-a
+        uma das mais cobiçadas do mundo automotivo.</p>
+    <hr>
+    <div class="container">
+        <button id="btnLang"
+            style="color: #050000; background-color: white; height: 35px; font-size: 14px; margin-right: 20px; "
+            onclick="trocaTexto()">Clique</button>
+
+        <h5 id="frase" style="text-align: center; font-size: 24px; color: #ffffff;">If Comparable, It Is No Longer
+            Bugatti - Ettore Bugatti</h5>
+    </div>
+
+    <script>
+        function trocaTexto() {
+            var frase = document.getElementById("frase");
+
+            if (frase.innerText === "If Comparable, It Is No Longer Bugatti - Ettore Bugatti") {
+                frase.innerText = "Se for comparável, não é mais Bugatti - Ettore Bugatti";
+            }
+            else if (frase.innerText === "Se for comparável, não é mais Bugatti - Ettore Bugatti") {
+                frase.innerText = "Wenn vergleichbar, ist es nicht mehr Bugatti - Ettore Bugatti";
+            }
+            else if (frase.innerText === "Wenn vergleichbar, ist es nicht mehr Bugatti - Ettore Bugatti") {
+                frase.innerText = "Si comparable, ce n'est plus Bugatti - Ettore Bugatti";
+            }
+            else if (frase.innerText === "Si comparable, ce n'est plus Bugatti - Ettore Bugatti") {
+                frase.innerText = "Si es comparable, ya no es Bugatti - Ettore Bugatti";
+            }
+            else if (frase.innerText === "Si es comparable, ya no es Bugatti - Ettore Bugatti") {
+                frase.innerText = "Se comparabile, non è più Bugatti - Ettore Bugatti";
+            }
+            else if (frase.innerText === "Se comparabile, non è più Bugatti - Ettore Bugatti") {
+                frase.innerText = "If Comparable, It Is No Longer Bugatti - Ettore Bugatti"
+            }
+        }
+    </script>
+</body>
+
+</html>
